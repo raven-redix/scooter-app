@@ -1,28 +1,16 @@
-import Scooter from './scooter';
 class User {
-    constructor(name, birthdate) {
+    constructor(name, birthDate) {
         this.name = name;
-        this.birthdate = birthdate;
+        this.birthDate = birthDate;
         this.payment = false;
     };
 
     assignToScooter() {
         return `This scooter has been assigned to ${this.name}!` 
-        /*async function uncharge() {
-            console.log('Battery depleting!');
-    
-            await new Promise(resolve => setTimeout(resolve, 40000)); // wait 40 seconds
-    
-            console.log('Please return this scooter and connect it to chargin station!');   
-       };*/
     };
 
     makePayment() {
-        if (this.payment === false) {
-            //let this.payment = true;
-
-        };
-        console.log('Thank you for your payment');
+        return 'Payment has successfully resolved';
     };
 };
 
@@ -31,4 +19,4 @@ user1.makePayment()
 user1.assignToScooter();
 
 console.log(user1);
-export default User;
+module.exports = User;

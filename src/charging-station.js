@@ -1,5 +1,3 @@
-import Scooter from './scooter';
-
 class ChargingStation {
     static availableAtDocStation = [];
     constructor(location) {
@@ -10,7 +8,7 @@ class ChargingStation {
     async charge() {
         console.log('Starting charge');
 
-        await new Promise(resolve => setTimeout(resolve, 5000)); // wait 5 seconds
+        await new Promise(resolve => setTimeout(resolve, 4000)); // wait 5 seconds
 
         console.log('Charge complete');   
    };
@@ -18,4 +16,4 @@ class ChargingStation {
 
 let c1 = new ChargingStation('Downtown');
 c1.charge();
-export default ChargingStation;
+module.exports = ChargingStation;
