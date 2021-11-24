@@ -10,7 +10,6 @@
     "test": "jest",
     "test:report": "jest --coverage=true"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/raven-redix/scooter-app.git"
@@ -23,6 +22,7 @@
   },
   "homepage": "https://github.com/raven-redix/scooter-app#readme",
   "dependencies": {
-    "jest": "^27.3.1"
+    "jest": "^27.3.1",
+    "sqlite3": "^4.2.0"
   }
 }
